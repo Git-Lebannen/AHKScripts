@@ -51,7 +51,7 @@ currentID := 0
         WinSet, AlwaysOnTop, Toggle, ahk_id %currentID%
 
         ; Make the current window transparent and change the title
-        WinSet, Transparent, 200, ahk_id %currentID%
+        WinSet, Transparent, 230, ahk_id %currentID%
         WinSetTitle, ahk_id %currentID%, , OnTop
     }
 return
