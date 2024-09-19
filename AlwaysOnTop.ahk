@@ -2,13 +2,12 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; dict for window IDs and their names
-windowDict := {}
+lastFocused := {}
 
-; helper to update the window dict every time you focus a window
-UpdateWindowDict() {
+; helper to save the last focused window
+saveLast() {
 
-    global windowDict
+    global lastFocused
 
     ; retrieve all window IDs
     WinGet, hwndList, List
