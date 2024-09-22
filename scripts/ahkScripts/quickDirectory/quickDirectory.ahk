@@ -1,7 +1,7 @@
 ; This script opens directories that are specified in the program by the individual user.
 ; Directories can be opened in cmd or the file explorer, depening on the hotkey.
 ; File explorer hotkeys are LButton + <F1> to <F12>
-; CMD hotkeys are MButton + <F1> to <F12>
+; CMD hotkeys are RButton + <F1> to <F12>
 ; ! Attention User, this script requires a "directories.txt" file to be placed in the same directory as this script.
 ; ! It must be formatted with each directory inputted as text, each path seperated by a ";", no spaces, no quotes.
 ; ! Example:
@@ -35,18 +35,18 @@ dirs := StrSplit(LoadedText, ";")
 ~LButton & F12::ExploreDir(12)
 
 ; cmd keybinds
-~MButton & F1::CMDDir(1)
-~MButton & F2::CMDDir(2)
-~MButton & F3::CMDDir(3)
-~MButton & F4::CMDDir(4)
-~MButton & F5::CMDDir(5)
-~MButton & F6::CMDDir(6)
-~MButton & F7::CMDDir(7)
-~MButton & F8::CMDDir(8)
-~MButton & F9::CMDDir(9)
-~MButton & F10::CMDDir(10)
-~MButton & F11::CMDDir(11)
-~MButton & F12::CMDDir(12)
+~RButton & F1::CMDDir(1)
+~RButton & F2::CMDDir(2)
+~RButton & F3::CMDDir(3)
+~RButton & F4::CMDDir(4)
+~RButton & F5::CMDDir(5)
+~RButton & F6::CMDDir(6)
+~RButton & F7::CMDDir(7)
+~RButton & F8::CMDDir(8)
+~RButton & F9::CMDDir(9)
+~RButton & F10::CMDDir(10)
+~RButton & F11::CMDDir(11)
+~RButton & F12::CMDDir(12)
 
 ; open the directory in the file explorer 
 ExploreDir(i) { 
