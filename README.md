@@ -22,7 +22,7 @@ The hotkey is **CTRL** + **SPACE**.
 This script opens directories that are specified in the program by the individual user.<br>
 Directories can be opened in cmd or the file explorer, depening on the hotkey.<br>
 File explorer hotkeys are **LButton** + **F1** to **F12**.<br>
-CMD hotkeys are **MButton** + **F1** to **F12**.
+CMD hotkeys are **RButton** + **F1** to **F12**.
 
 **Attention: this script requires the "directories.txt" file to be modified to the user's needs.**
 It must be formatted with each directory path seperated by a ";", no spaces, no quotes. Here's an example:
