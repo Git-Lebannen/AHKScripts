@@ -1,4 +1,7 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+﻿; This script puts the active window in always on top mode.
+; The always on top window will be slightly transparent and renamed to OnTop for legibilty while tabing through windows.
+; The hotkey is <CTRL> + <SPACE>
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
