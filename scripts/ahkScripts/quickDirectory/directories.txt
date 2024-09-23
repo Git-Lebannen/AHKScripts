@@ -1,1 +1,1 @@
-C:\Users\Lebannen\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup;C:\Users\Lebannen\Coding\AHKScripts\scripts\ahkScripts;C:\Users\Lebannen\Documents\lists;C:\Users\Lebannen\AppData\Local\nvim;C:\Users\Lebannen\Pictures\Screenshots
+C:\Users\
