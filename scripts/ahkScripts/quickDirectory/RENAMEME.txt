@@ -1,0 +1,6 @@
+! Rename this file to directories.txt !
+Then add the directories you want hotkeys to (up to 12), in the following manner:
+
+C:\Users;C:\Users\Public
+
+Each path is separated by a semicolon
