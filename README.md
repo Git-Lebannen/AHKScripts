@@ -19,7 +19,7 @@ The always on top window will be slightly transparent and renamed to OnTop for l
 The hotkey is **CTRL** + **SPACE**.
 
 ## QuickDirectory
-This script opens directories that are specified in the program by the individual user.<br>
+This script opens directories that are specified by the user.<br>
 Directories can be opened in cmd or the file explorer, depening on the hotkey.<br>
 File explorer hotkeys are **LButton** + **F1** to **F12**.<br>
 CMD hotkeys are **RButton** + **F1** to **F12**.
