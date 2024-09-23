@@ -52,13 +52,13 @@ dirs := StrSplit(LoadedText, ";")
 ExploreDir(i) { 
     global dirs
     path := % dirs[i]
-    Run, %path% 
+    Run %path%
 }
 
 ; open the directory in CMD
 CMDDir(i) {
     global dirs
     path := % dirs[i]
-    Run "CMD.exe", %path%
+    Run "CMD.exe", %path%, max
 }
 
