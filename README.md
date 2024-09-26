@@ -1,5 +1,5 @@
 # AHKScripts
-A collection of AutoHotkey scripts. Scripts are made to work with AutoHotkey version 1.1 unless otherwise specified. Download AKH here:
+A collection of AutoHotkey scripts. Scripts are made to work with AutoHotkey version 2 unless otherwise specified. Download AKH here:
 
 **https://www.autohotkey.com/**
 
