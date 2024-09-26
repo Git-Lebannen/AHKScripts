@@ -6,16 +6,13 @@
 ; ! It must be formatted with each directory inputted as text, each path seperated by a ";", no spaces, no quotes.
 ; ! Example:
 ; C:\Users\Lebannen\Coding\ahkScripts;C:\Users\Lebannen\Documents;C:\Users\Lebannen\Pictures
-#NoEnv ; Increases performance, avoids bugs caused by environment variables
-SendMode Input ; Recommended for new scripts due to its superior speed and reliability
-SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
-
-file := "directories.txt"
+SendMode("Input") ; Recommended for new scripts due to its superior speed and reliability
+SetWorkingDir(A_ScriptDir)  ; Ensures a consistent starting directory
 
 dirs := {}
 
 ; read directories file into an array
-FileRead, LoadedText, %file%
+LoadedText := FileRead("directories.txt")
 dirs := StrSplit(LoadedText, ";")
 
 ; It's just 24 keybinds, nothing to worry about :D
@@ -51,14 +48,13 @@ dirs := StrSplit(LoadedText, ";")
 ; open the directory in the file explorer 
 ExploreDir(i) { 
     global dirs
-    path := % dirs[i]
-    Run %path%
+    path := dirs[i]
+    Run(path)
 }
 
 ; open the directory in CMD
 CMDDir(i) {
     global dirs
-    path := % dirs[i]
-    Run "CMD.exe", %path%, max
+    path := dirs[i]
+    Run("`"CMD.exe`"", path, "max")
 }
-
