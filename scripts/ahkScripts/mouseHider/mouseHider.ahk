@@ -8,5 +8,7 @@ while True {
 
     ; after the set time of inactivity
     if A_TimeIdleMouse > 5000 {     
+        ; DLLCall("SetSystemCursor")
+    } else {
     }
 }
