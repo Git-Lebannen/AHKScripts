@@ -32,29 +32,35 @@ dirs := StrSplit(LoadedText, ";")
 ~LButton & F12::ExploreDir(12)
 
 ; cmd keybinds
-~RButton & F1::CMDDir(1)
-~RButton & F2::CMDDir(2)
-~RButton & F3::CMDDir(3)
-~RButton & F4::CMDDir(4)
-~RButton & F5::CMDDir(5)
-~RButton & F6::CMDDir(6)
-~RButton & F7::CMDDir(7)
-~RButton & F8::CMDDir(8)
-~RButton & F9::CMDDir(9)
-~RButton & F10::CMDDir(10)
-~RButton & F11::CMDDir(11)
-~RButton & F12::CMDDir(12)
+~space & F1::CMDDir(1)
+~space & F2::CMDDir(2)
+~space & F3::CMDDir(3)
+~space & F4::CMDDir(4)
+~space & F5::CMDDir(5)
+~space & F6::CMDDir(6)
+~space & F7::CMDDir(7)
+~space & F8::CMDDir(8)
+~space & F9::CMDDir(9)
+~space & F10::CMDDir(10)
+~space & F11::CMDDir(11)
+~space & F12::CMDDir(12)
 
 ; open the directory in the file explorer 
 ExploreDir(i) { 
-    global dirs
-    path := dirs[i]
-    Run(path)
+    try {
+        global dirs
+        path := dirs[i]
+        Run path
+    }
 }
 
 ; open the directory in CMD
 CMDDir(i) {
-    global dirs
-    path := dirs[i]
-    Run("`"CMD.exe`"", path, "max")
+    try {
+        global dirs
+        path := dirs[i]
+        Run "CMD.exe", path, "Max"
+        winID := WinGetID("A")
+        winActivate(winID)
+    }
 }
