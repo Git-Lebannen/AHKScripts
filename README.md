@@ -22,7 +22,7 @@ The hotkey is **CTRL** + **SPACE**.
 This script opens directories that are specified by the user.<br>
 Directories can be opened in cmd or the file explorer, depening on the hotkey.<br>
 File explorer hotkeys are **LButton** + **F1** to **F12**.<br>
-CMD hotkeys are **RButton** + **F1** to **F12**.
+CMD hotkeys are **Space** + **F1** to **F12**.
 
 **Attention: this script requires the file "RENAMEME.txt" locatd in *scripts\ahkScripts\quickDirectory* to be renamed to "directories.txt" and then modified to the user's needs.**
 Each directory path in the renamed file must be seperated by a ";", no spaces, no quotes. Here's an example:
