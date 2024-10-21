@@ -4,11 +4,11 @@ SendMode("Input")  ; Recommended for new scripts due to its superior speed and r
 SetWorkingDir(A_ScriptDir)  ; Ensures a consistent starting directory.
 InstallMouseHook ; Required for A_TimeIdleMouse
 
-while True {
+; while True {
 
     ; after the set time of inactivity
-    if A_TimeIdleMouse > 5000 {     
+    ;if A_TimeIdleMouse > 5000 {     
         ; DLLCall("SetSystemCursor")
-    } else {
-    }
-}
+    ;} else {
+    ;}
+; }
